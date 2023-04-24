@@ -1,0 +1,241 @@
+*{
+  margin:0;
+  padding: 0;
+
+}
+
+body{
+  background-image: url(../img/f26.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+.container1{
+background-image: url(/images/XiP3qS0.jpg);
+padding: 10px;
+display: flex;
+flex-direction: row;
+margin: 0;
+text-align: center;
+justify-content: center;
+gap: 250px;
+flex-wrap:nowrap;
+width:100%;
+font-size: 25px;
+}
+
+.nav{
+
+text-align: center;
+height: 70px;
+line-height: 70px;
+position: absolute;
+z-index: 999;
+}
+
+.menu{
+display:flex;
+margin: 0 30px 0 0;
+}
+
+.menu a{
+clear: right;
+text-decoration: none;
+color: #FEFFFF;
+text-shadow: 0 0 0.3em #f87;
+margin: 0 10px;
+line-height: 70px;
+letter-spacing: .9px;
+text-transform: uppercase;
+transition: all 250ms ease;
+}
+
+
+@keyframes strike{
+0%   { width : 0; }
+100% { width: 100%; }
+}
+
+.strike {
+position: relative;
+}
+
+.strike:hover:after {
+content: ' ';
+position: absolute;
+top: 40%;
+left: 0;
+width: 100%;
+height: 2px;
+background: #FEFFFF;
+animation-name: strike;
+animation-duration: 1s;
+animation-timing-function: ease;
+animation-iteration-count: infinite;
+}
+
+.menu h5{
+margin: 0 30px;
+text-transform: uppercase;
+float: left;
+font-weight: 300;
+font-size: 25px;
+letter-spacing: 2px;
+position: relative;
+z-index: 999;
+color: #FEFFFF;
+}
+
+
+#toggle{
+display: none;
+}
+
+@media only screen and (max-width: 1100px){
+.container1{
+    width:100%;
+    font-size: 15px;
+}
+}
+
+@media only screen and (max-width: 800px){
+.container1{
+    width:100%;
+    font-size: 10px
+}
+}
+@media only screen and (max-width: 663px){
+.container1{
+    width:100%;
+    font-size: 10px;
+}
+label{
+display: block;
+cursor: pointer;
+}
+
+.menu img{
+display:none;
+}
+.menu{
+text-align: center;
+width: 100%;
+display: none;
+}
+.menu a{
+display: block;
+border-bottom: 1px solid #EAEAEB;
+margin: 0;
+color: black;
+text-shadow: 0 0 0.3em white;
+}
+
+
+#toggle:checked + .menu{display: block; background-color: #FEFFFF;}
+}
+
+.container{
+height: 50%;
+/*box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #b1a9b0, 0 0 25px #c0b5bf;*/
+margin-top: 5em;
+margin-left: 30em;
+margin-right: 30em;
+border-radius: 1em;
+background-color: rgb(253, 252, 252);
+box-shadow: inset 0px 0px 15px #B9C1CB, 0px 0px 5px #ADB8C4;
+border: 1px solid gray;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+
+#table-content table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#table-content th {
+  color: black;
+ /* background-color: rgba(133, 106, 255, 0.589); */
+}
+
+
+#table-content th, td {
+  padding: 15px;
+  text-align: center;
+  border: 1px solid black;
+  
+}
+#close {
+/*background-color: rgba(161, 140, 255, 0.705); */
+line-height: 48px;
+width: 3.5rem;
+height: 1.9rem;
+}
+
+/* @media screen and (max-width: 700px){
+.container table{
+  width: 100%;
+}
+.container table tr{
+  display:flex;
+  flex-direction: column;
+  border: 1px solid grey;
+  padding:1em;
+  margin-bottom: 1em;
+}
+
+.container table thead{
+  display:flex;
+}
+} */
+
+@media screen and (max-width: 800px){
+  nav{
+    justify-content: space-around;
+
+  }
+}
